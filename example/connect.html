@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>اتصال به بانک سامان</title>
+    <link rel="stylesheet" href="{{.base_url}}/css/bootstrap/bootstrap-rtl.min.css">
+</head>
+<style>
+    p, div {
+        direction: rtl;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+<script language="javascript" type="text/javascript">setTimeout(function () {
+        document.getElementById('payment_step_one').submit();
+    }, 100);</script>
+<form method="post" action="https://sep.shaparak.ir/OnlinePG/OnlinePG" id="payment_step_one">
+    <input type="hidden" name="Token" value="{{.token}}">
+</form>
+<p class="col-sm-4 alert alert-success text-center">در حال اتصال به بانک</p>
+</body>
+</html>
