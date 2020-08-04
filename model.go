@@ -1,5 +1,9 @@
 package samanpayment
 
+type SamanConfig struct {
+	TerminalId int `json:"TerminalId"`
+}
+
 type RequestToken struct {
 	Action              string `json:"action"`
 	TerminalId          int    `json:"TerminalId"`
