@@ -1,1 +1,1 @@
-# samanpaymentforgo
+# saman payment package for golang
